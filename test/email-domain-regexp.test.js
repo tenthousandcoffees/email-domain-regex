@@ -34,5 +34,12 @@ describe('email-domain-regexp', () => {
         const subDomains = ['test@a.domainOne.com   ', 'test@ab.domainTwo.com    '];
         const genRegex = emailDomainRegexp(wildCardDomains);
         subDomains.forEach(subDomain => genRegex.test(subDomain).should.be.true);
-    })
+    });
+
+    it('should match domain case insensitively', () => {
+        const wildCardDomains = ['*.domainone.com', 'domaintwo.com'];
+        const subDomains = ['test@A.DOMAINONE.com', 'test@a.DOMAINONE.com', 'test@DOMAINTWO.com'];
+        const genRegex = emailDomainRegexp(wildCardDomains);
+        subDomains.forEach(subDomain => genRegex.test(subDomain).should.be.true);
+    });
 });

@@ -13,6 +13,6 @@
         var checkDomainRegex = _(approvedDomains)
             .map(function(domain) { return escapeString(_.trim(domain, ' @')).replace('\\*\\.', '(\\w*\\.|)'); })
             .join('|');
-        return new RegExp('@(' + checkDomainRegex + ')\\s*$');
+        return new RegExp('@(' + checkDomainRegex + ')\\s*$', 'i');
     }
 });

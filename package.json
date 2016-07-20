@@ -1,6 +1,6 @@
 {
   "name": "email-domain-regexp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate a RegExp to match an array of domains. Support for wildcard (*) is supported.",
   "main": "email-domain-regexp.js",
   "scripts": {
