@@ -1,6 +1,6 @@
 {
   "name": "email-domain-regexp",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Generate a RegExp to match an array of domains. Support for wildcard (*) is supported.",
   "main": "email-domain-regexp.js",
   "scripts": {
@@ -10,7 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "escape-string-regexp": "git+https://github.com/tenthousandcoffees/escape-string-regexp",
-    "lodash": "^4.13.1"
   },
   "repository": {
     "type": "git",
